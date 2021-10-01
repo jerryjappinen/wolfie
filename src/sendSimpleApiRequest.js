@@ -5,12 +5,12 @@ const simpleApiUrl = baseUrl + 'simple'
 
 // See available options:
 // https://products.wolframalpha.com/simple-api/explorer/
-export default (apiAppId, input, options) => {
+export default (wolframAlphaDeveloperAppId, input, options) => {
   return axios.get(simpleApiUrl, {
     params: {
       ...options,
       i: input,
-      appId: apiAppId
+      appid: wolframAlphaDeveloperAppId
     }
   })
 }
