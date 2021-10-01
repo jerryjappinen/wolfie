@@ -28,7 +28,7 @@ wolfie.fetch('What is the capital of Germany')
 If you cannot use the version on NPM, try the AMD module built by bundle.run.
 
 ```js
-const createWolfieClient = require('https://bundle.run/wolfie@0.0.5').default
+const createWolfieClient = require('https://bundle.run/wolfie').default
 ```
 
 You can use this package on [observablehq.com](https://observablehq.com/):
