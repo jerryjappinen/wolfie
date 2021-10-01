@@ -28,14 +28,14 @@ wolfie.fetch('What is the capital of Germany')
 If you cannot use the version on NPM, try the AMD module built by bundle.run.
 
 ```js
-const createWolfieClient = require('https://bundle.run/wolfie@0.0.4').default
+const createWolfieClient = require('https://bundle.run/wolfie@0.0.5').default
 ```
 
 You can use this package on [observablehq.com](https://observablehq.com/):
 
 ```js
 // Load Wolfie asynchronously, and initialise it with an environment secret
-wolfie = (await require('https://bundle.run/wolfie@0.0.4')).default(Secret("myAppIdInObservableSettings"))
+wolfie = (await require('https://bundle.run/wolfie@0.0.5')).default(Secret("myAppIdInObservableSettings"))
 ```
 
 # Development

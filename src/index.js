@@ -1,4 +1,5 @@
-import getSimpleApiRequestUrl from './getSimpleApiRequestUrl'
+import getClientUrl from './getClientUrl'
+import getSimpleApiUrl from './getSimpleApiUrl'
 import sendSimpleApiRequest from './sendSimpleApiRequest'
 
 // Simple createClient function
@@ -9,8 +10,12 @@ export default (appId) => {
       return sendSimpleApiRequest(appId, ...args)
     },
 
+    getClientUrl (...args) {
+      return getClientUrl(...args)
+    },
+
     getUrl (...args) {
-      return getSimpleApiRequestUrl(appId, ...args)
+      return getSimpleApiUrl(appId, ...args)
     }
 
   }
