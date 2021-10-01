@@ -6,6 +6,10 @@ Wolfram Alpha's API documentation: https://products.wolframalpha.com/api/
 
 ### Usage
 
+```hs
+npm install wolfie
+```
+
 ```js
 import getWolfieClient from 'wolfie'
 
@@ -15,6 +19,16 @@ wolfie.fetch('What is the capital of Germany')
 ```
 
 # Development
+
+### Commands
+
+```sh
+# Build src/ and inject into root (this will be done upon install)
+npm run build
+
+# Clean root of built files
+npm run clean
+```
 
 ### Running tests
 
