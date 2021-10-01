@@ -8,9 +8,7 @@ jest.setTimeout(30 * 1000) // 30 s
 
 describe('sendSimpleApiRequest', () => {
   it('should query valid endpoint', async () => {
-    const response = await sendSimpleApiRequest(validAppId, 'What is the capital of Berlin')
-
-    console.log(response)
+    const response = await sendSimpleApiRequest(validAppId, 'What is the capital of Berlin?')
 
     expect(response).toBeTruthy()
   })

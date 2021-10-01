@@ -5,5 +5,5 @@ import getAxiosConfig from './getAxiosConfig'
 // See available options:
 // https://products.wolframalpha.com/simple-api/explorer/
 export default (appId, input, options) => {
-  return axios(getAxiosConfig(appId, input, options))
+  return axios.getUri(getAxiosConfig(appId, input, options))
 }
