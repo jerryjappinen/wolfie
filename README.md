@@ -2,11 +2,16 @@
 
 Simple wrapper for Wolfram Alpha's API.
 
-Wolfram Alpha's API documentation: https://products.wolframalpha.com/api/
+- Download from NPM: https://npmjs.org/wolfie
+- Source, bugs and pull requests: https://github.com/jerryjappinen/wolfie
 
 ### Usage
 
-```hs
+This package requires you to have your own App ID. You can get this by signing up for Wolfram Alpha's developer portal and creating an ID.
+
+Once you have the ID, you're ready to load Wolfie:
+
+```sh
 npm install wolfie
 ```
 
@@ -16,6 +21,21 @@ import getWolfieClient from 'wolfie'
 const wolfie = getWolfieClient('YOUR_WOLFRAM_ALPHA_APP_ID')
 
 wolfie.fetch('What is the capital of Germany')
+```
+
+### Alternative builds
+
+If you cannot use the version on NPM, try the AMD module built by bundle.run.
+
+```js
+const createWolfieClient = require('https://bundle.run/wolfie@0.0.4').default
+```
+
+You can use this package on [observablehq.com](https://observablehq.com/):
+
+```js
+// Load Wolfie asynchronously, and initialise it with an environment secret
+wolfie = (await require('https://bundle.run/wolfie@0.0.4')).default(Secret("myAppIdInObservableSettings"))
 ```
 
 # Development
