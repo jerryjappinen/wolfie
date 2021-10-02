@@ -5,7 +5,7 @@ Simple wrapper for Wolfram Alpha's API.
 - Download from NPM: https://npmjs.org/wolfie
 - Source, bugs and pull requests: https://github.com/jerryjappinen/wolfie
 
-### Usage
+## Usage
 
 This package requires you to have your own App ID. You can get this by signing up for Wolfram Alpha's developer portal and creating an ID.
 
@@ -20,7 +20,25 @@ import getWolfieClient from 'wolfie'
 
 const wolfie = getWolfieClient('YOUR_WOLFRAM_ALPHA_APP_ID')
 
-wolfie.fetch('What is the capital of Germany')
+wolfie.fetch('What is the capital of Germany?')
+```
+
+### API
+
+```js
+// Get short answers
+wolfie.fetch('What is the capital of Germany?')
+
+// URL to short answer respons
+wolfie.getUrl('What is the capital of Germany?')
+```
+
+```js
+// Get short answers
+wolfie.fetchImage('solve(x^2 / 20 = 2400^4, x)')
+
+// URL to short answer respons
+wolfie.getImageUrl('solve(x^2 / 20 = 2400^4, x)')
 ```
 
 ### Alternative builds

@@ -1,10 +1,10 @@
-import { simpleApiUrl } from './config'
+import { apiUrls } from './config'
 
 // See available options:
 // https://products.wolframalpha.com/simple-api/explorer/
-export default (appId, input, options) => {
+export default (appId, endpoint, input, options) => {
   return {
-    url: simpleApiUrl,
+    url: apiUrls[endpoint],
     method: 'get',
     params: {
       ...options,

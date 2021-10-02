@@ -7,7 +7,7 @@ const validAppId = process.env.SPEC_APP_ID
 jest.setTimeout(30 * 1000) // 30 s
 
 describe('sendSimpleApiRequest', () => {
-  it('should query valid endpoint', async () => {
+  it('should return valid response', async () => {
     const response = await sendSimpleApiRequest(validAppId, 'What is the capital of Berlin?')
 
     expect(response).toBeTruthy()
