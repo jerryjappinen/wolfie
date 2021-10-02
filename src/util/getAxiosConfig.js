@@ -1,4 +1,4 @@
-import { simpleApiUrl } from './config'
+import { simpleApiUrl } from '../config'
 
 // See available options:
 // https://products.wolframalpha.com/simple-api/explorer/

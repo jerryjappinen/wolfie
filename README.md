@@ -35,7 +35,7 @@ You can use this package on [observablehq.com](https://observablehq.com/):
 
 ```js
 // Load Wolfie asynchronously, and initialise it with an environment secret
-wolfie = (await require('https://bundle.run/wolfie@0.0.5')).default(Secret("myAppIdInObservableSettings"))
+wolfie = (await require('https://bundle.run/wolfie')).default(Secret("myAppIdInObservableSettings"))
 ```
 
 # Development
