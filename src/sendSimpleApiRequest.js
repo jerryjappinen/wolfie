@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import getAxiosConfig from './util/getAxiosConfig'
+import getAxiosConfig from './getAxiosConfig'
 
 // See available options:
 // https://products.wolframalpha.com/simple-api/explorer/
