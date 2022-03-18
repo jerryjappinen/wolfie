@@ -49,7 +49,7 @@ If you cannot use the version on NPM, try the AMD module built by bundle.run.
 const createWolfieClient = require('https://bundle.run/wolfie').default
 ```
 
-You can use this package on [observablehq.com](https://observablehq.com/):
+You can use this package on [observablehq.com](https://observablehq.com/@jerryjappinen/wolframalpha):
 
 ```js
 // Load Wolfie asynchronously, and initialise it with an environment secret
